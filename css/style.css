@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ededed;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.show-container {
+    visibility: visible;
+}
+.titles {
+    padding-top: 80px;
+}
+h1 {
+    padding: 40px 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #464646;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+h3 {
+    padding: 0 0 20px 0;
+    text-align: center;
+    color: #464646;
+    font-weight: normal;
+    font-size: 26px;
+    border-bottom: 2px solid #c9c9c9;
+    width: 600px;
+}
+.content-box {
+    background: #f3f3f3;
+    box-shadow: -1px -1px 9px -1px rgba(28,28,28,0.25);
+    width: 600px;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.content-box input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #c9c9c9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+}
+.content-box input::placeholder {
+    color: #464646;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.content-box .submitBtn {
+    border: none;
+    font-size: 19px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 8px 10px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #5b9b63;
+    border-radius: 10px;
+    transition: 0.15s ease-in;
+}
+.content-box .submitBtn:hover {
+    background-color: #1f6328;
+}
+.content-box .alert {
+    text-align: center;
+    margin: 25px 0;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.alert-success {
+    background-color: #77dc9f;
+    text-align: center;
+    margin: 25px 0;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.25s ease-in;
+    padding: 5px 0;
+}
+.alert-danger {
+    background-color: #df5252;
+    text-align: center;
+    margin: 25px 0;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.25s ease-in;
+    padding: 5px 0;
+}
+.gameItem {
+    margin-top: 40px;
+    border-bottom: 2px solid #e1e1e1;
+    padding: 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemList button {
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.itemList button i {
+   font-size: 17px;
+}
+.itemList .editButton {    
+    color: #4C74C0;
+}
+.itemList .deleteButton {    
+    color: #DF5252;
+}
+.itemList .editButton:hover {    
+    color: #0a44af;
+}
+.itemList .deleteButton:hover {    
+    color: #d10c0c;
+}
+.content-box .options {
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.content-box .options button:first-of-type {
+    margin-right: 215px;
+}
+.content-box .options button {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    cursor: pointer;
+}
+.content-box .options .clearAllItems {
+    color: #df5252;
+}
+.content-box .options .clearAllItems:hover {
+    color: #d10c0c;
+}
+.content-box .options .orderByYear:hover {
+    color: #888888;
+}
+
+@media(max-width: 1140px){
+    body {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .titles {
+        padding-top: 50px;
+    }
+    h3 {
+        width: 600px;
+    }
+}
+
+@media(max-width: 798px){
+    .titles {
+        padding-top: 50px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 20px;
+        width: 400px;
+    }
+    .content-box {
+        width: 400px;
+        padding: 20px;
+    }
+    .content-box input {
+        width: 250px;
+        font-size: 16px;
+    }
+    .content-box input::placeholder {
+        font-size: 15px;
+    }
+    .content-box .submitBtn {
+        font-size: 18px;
+    }
+    .content-box .alert {
+        font-size: 16px;
+    }
+    .itemList .item {
+        font-size: 15px;
+    }
+    .itemList button i {
+        font-size: 14px;
+     }
+     .content-box .options button:first-of-type {
+        margin-right: 55px;
+    }
+}
